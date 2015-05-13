@@ -65,9 +65,11 @@ void CGenetic::mutate(std::vector<int> &vecBits)
     {
         if (CCRANDOM_0_1() < m_fMutationRate)
         {
-            vecBits[i] = ~vecBits[i];
+            vecBits[i] = !vecBits[i];
         }
+        
     }
+
 }
 
 SGenome& CGenetic::rouletteWheelSelection()
@@ -115,11 +117,15 @@ void CGenetic::updateFitnessScores()
 std::vector<int> CGenetic::decode(const std::vector<int> &bits)
 {
     std::vector<int> directions;
+    std::stringstream str;
+
     for (int gene=0; gene<bits.size(); gene += m_iGeneLength)
     {
         std::vector<int> thisGene(bits.begin() + gene, bits.begin() + gene + m_iGeneLength);
         directions.push_back(binToInt(thisGene));
+        str << binToInt(thisGene) << ",";
     }
+    CCLOG(str.str().c_str());
     return directions;
 }
 
@@ -138,7 +144,7 @@ int CGenetic::binToInt(const std::vector<int> &v)
 void CGenetic::createStartPopulation()
 {
     m_vecGenomes.clear();
-    for (int i=0; i<m_iChromoLength; ++i)
+    for (int i=0; i<m_iPopSize; ++i)
     {
         m_vecGenomes.push_back(SGenome(m_iChromoLength));
     }

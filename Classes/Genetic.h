@@ -28,7 +28,7 @@ struct SGenome
         vecBits.resize(numBits);
         for (int i=0; i<numBits; ++i)
         {
-            vecBits[i] = random(0, 2);
+            vecBits[i] = random(0, 1);
         }
     }
 };

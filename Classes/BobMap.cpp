@@ -32,6 +32,8 @@ bool BobMap::init()
     }
     m_startX = 1;
     m_startY = 1;
+    m_endX = 13;
+    m_endY = 1;
     
     m_map = DrawNode::create();
     addChild(m_map);
@@ -45,7 +47,7 @@ bool BobMap::init()
 
 float BobMap::testRoute(const std::vector<int> &path)
 {
-    m_bob->clear();
+//    m_bob->clear();
     int x = m_startX, y = m_startY;
     CCLOG("path: %d",  path.size());
     for (int dir : path)
