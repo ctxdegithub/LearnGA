@@ -42,13 +42,13 @@ bool TestLayer::init()
 
 bool TestLayer::touchBegan(cocos2d::Touch *touch, cocos2d::Event *event)
 {
-    m_streak->setPosition(touch->getLocation());
+//    m_streak->setPosition(touch->getLocation());
     return true;
 }
 
 void TestLayer::touchMoved(cocos2d::Touch *touch, cocos2d::Event *event)
 {
-    m_streak->setAngle(m_streak->getAngle() - 0.1f * touch->getLocation().getAngle(touch->getPreviousLocation()));
+    m_streak->setAngle(m_streak->getAngle() - touch->getLocation().getAngle(touch->getPreviousLocation()));
 }
 
 void TestLayer::touchEnded(cocos2d::Touch *touch, cocos2d::Event *event)

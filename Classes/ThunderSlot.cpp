@@ -259,7 +259,6 @@ void ThunderSlot::update(float delta)
         _colorPointer[i*8+7] = 255;
 
     }
-    CCLOG("pos: %f, %f", _pointVertexes[_maxPoints-1].x, _pointVertexes[_maxPoints-1].y);
     _nuPoints = _maxPoints;
 
     ccVertexLineToPolygon(_pointVertexes, _stroke, _vertices, 0, _nuPoints);
@@ -268,7 +267,6 @@ void ThunderSlot::update(float delta)
     for(int i=0; i < _nuPoints; i++ ) {
         _texCoords[i*2] = Tex2F(0, (curTime + texDelta*i));
         _texCoords[i*2+1] = Tex2F(1, (curTime + texDelta*i));
-        CCLOG("%f, %f", _texCoords[i*2].v, _texCoords[i*2+1].v);
     }
 }
 
