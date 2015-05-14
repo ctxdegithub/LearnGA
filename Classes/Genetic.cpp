@@ -16,9 +16,9 @@ void CGenetic::epoch()
         return;
     }
     updateFitnessScores();
-    if (fabs(m_fBestFitnessScore - 1.f) < FLT_EPSILON)
+    if (!m_bBusy)
     {
-        m_bBusy = false;
+        return;
     }
     
     int newBobies = 0;
@@ -108,16 +108,26 @@ void CGenetic::updateFitnessScores()
     for (int i=0; i<m_vecGenomes.size(); ++i)
     {
         std::vector<int> vecDirections = decode(m_vecGenomes[i].vecBits);
-        m_vecGenomes[i].fFitness = m_map->testRoute(vecDirections);
+        auto pathInfo = m_map->testRoute(vecDirections);
+        m_vecGenomes[i].fFitness = pathInfo.fitness;
         m_fTotalFitnessScore += m_vecGenomes[i].fFitness;
         if (m_vecGenomes[i].fFitness > m_fBestFitnessScore)
         {
             m_fBestFitnessScore = m_vecGenomes[i].fFitness;
-            if (m_fBestFitnessScore == 1.f)
+            if (fabs(m_fBestFitnessScore - 1.f) < FLT_EPSILON)
             {
-                m_iFittestGenome = i;
-                m_bBusy = false;
-                return;
+                if (pathInfo.length <= m_iFittestLength)
+                {
+                    m_iFittestNum++;
+                    CCLOG("fit num: %d", m_iFittestNum);
+                    m_iFittestGenome = i;
+                    m_iFittestLength = pathInfo.length;
+                    if (m_iFittestNum > FITTEST_NUM)
+                    {
+                        m_bBusy = false;
+                        return;
+                    }
+                }
             }
         }
     }
@@ -126,15 +136,15 @@ void CGenetic::updateFitnessScores()
 std::vector<int> CGenetic::decode(const std::vector<int> &bits)
 {
     std::vector<int> directions;
-    std::stringstream str;
+//    std::stringstream str;
 
     for (int gene=0; gene<bits.size(); gene += m_iGeneLength)
     {
         std::vector<int> thisGene(bits.begin() + gene, bits.begin() + gene + m_iGeneLength);
         directions.push_back(binToInt(thisGene));
-        str << binToInt(thisGene) << ",";
+//        str << binToInt(thisGene) << ",";
     }
-    CCLOG(str.str().c_str());
+//    CCLOG(str.str().c_str());
     return directions;
 }
 
@@ -159,6 +169,8 @@ void CGenetic::createStartPopulation()
     }
     m_iGeneration = 0;
     m_iFittestGenome = 0;
+    m_iFittestNum = 0;
+    m_iFittestLength = INT_MAX;
     m_fBestFitnessScore = 0.f;
     m_fTotalFitnessScore = 0.f;
 }

@@ -46,9 +46,17 @@ bool HelloWorld::init()
 
 void HelloWorld::update(float dt)
 {
-    m_time += dt;
-//    if (m_time > 0.1f)
+    m_genetic->epoch();
+    if (!m_genetic->getBusy())  // 找到路径
     {
-        m_genetic->epoch();
+        std::stringstream str;
+        auto path = m_genetic->getFittestPath();
+        m_genetic->getMap()->drawPath(path);
+        for (int dir : path)
+        {
+            str << dir << ",";
+        }
+        CCLOG(str.str().c_str());
+        unscheduleUpdate();
     }
 }

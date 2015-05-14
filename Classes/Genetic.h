@@ -15,8 +15,9 @@ USING_NS_CC;
 const float CROSSOVER_RATE = 0.7f;
 const float MUTATION_RATE = 0.01f;
 const int POP_SIZE = 140;
-const int CHROMO_LENGTH = 70;
+const int CHROMO_LENGTH = 48;
 const int GENE_LENGTH = 2;
+const int FITTEST_NUM = 200;
 
 struct SGenome
 {
@@ -44,6 +45,8 @@ public:
         m_iPopSize(popSize),
         m_iChromoLength(chromoLength),
         m_iGeneLength(geneLen),
+        m_iFittestNum(0),
+        m_iFittestLength(0),
         m_iFittestGenome(0.f),
         m_fTotalFitnessScore(0.f),
         m_fBestFitnessScore(0.f),
@@ -56,6 +59,7 @@ public:
     void createStartPopulation();
     int getGeneration() { return m_iGeneration; }
     int getFittest() { return m_iFittestGenome; }
+    std::vector<int> getFittestPath() { return decode(m_vecGenomes[m_iFittestGenome].vecBits); }
     void epoch();
     
 private:
@@ -76,11 +80,13 @@ private:
     int m_iChromoLength;                    // 每条染色体多少bits
     int m_iGeneLength;                      // 每条基因多少bits
     int m_iFittestGenome;                   // 最适应的基因
+    int m_iFittestNum;
+    int m_iFittestLength;                   // 最适应长度
     float m_fBestFitnessScore;              // 最好的适应分数
     float m_fTotalFitnessScore;             //
     int m_iGeneration;                      // 遗传代数
     
-    bool m_bBusy;
+    CC_SYNTHESIZE_READONLY(bool, m_bBusy, Busy);
     
     CC_SYNTHESIZE(BobMap*, m_map, Map);
 };

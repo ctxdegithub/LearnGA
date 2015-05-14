@@ -41,18 +41,18 @@ bool BobMap::init()
     m_bob = DrawNode::create();
     addChild(m_bob);
     m_bob->drawDot(Vec2(GRID_WIDTH * (m_startX + 0.5f), GRID_HEIGHT * (MAP_HEIGHT - m_startY - 0.5f)), 20.f, Color4F(1.f, 0.f, 0.f, 1.f));
-//    m_bob->setPosition(Vec2(GRID_WIDTH * (m_startX + 0.5f), GRID_HEIGHT * (MAP_HEIGHT - m_startY - 0.5f)));
     drawMap();
     return true;
 }
 
-float BobMap::testRoute(const std::vector<int> &path)
+PathInfo BobMap::testRoute(const std::vector<int> &path)
 {
+    PathInfo pathInfo;
     m_bob->clear();
     int x = m_startX, y = m_startY;
-    for (int dir : path)
+    for (int i=0; i<path.size(); ++i)
     {
-        switch (dir) {
+        switch (path[i]) {
             case 0: // left
                 x--;
                 break;
@@ -70,19 +70,18 @@ float BobMap::testRoute(const std::vector<int> &path)
         }
         if (x == m_endX && y == m_endY)
         {
-            return 1;
+            pathInfo.length = i;
+            pathInfo.fitness = 1.f;
+            return pathInfo;
         }
         if (!canMove(x, y))
         {
             break;
         }
-        if (x == 6 && y == 3)
-        {
-            CCLOG("~~~~~~~");
-        }
         m_bob->drawDot(Vec2(GRID_WIDTH * (x + 0.5f), GRID_HEIGHT * (MAP_HEIGHT - y - 0.5f)), 20.f, Color4F(1.f, 1.f, 0.f, 1.f));
     }
-    return 1.f / (1.f + fabs(m_endX - x) + fabs(m_endY - y));
+    pathInfo.fitness = 1.f / (1.f + fabs(m_endX - x) + fabs(m_endY - y));
+    return pathInfo;
 }
 
 bool BobMap::canMove(int x, int y)
@@ -110,4 +109,30 @@ void BobMap::drawMap()
     m_map->drawRect(Vec2(GRID_WIDTH * m_endX, GRID_HEIGHT * (MAP_HEIGHT - m_endY)),
                     Vec2(GRID_WIDTH * (m_endX+1), GRID_HEIGHT * (MAP_HEIGHT - m_endY - 1)),
                     Color4F(0.1f, 1.f, 1.f, 1.f));
+}
+
+void BobMap::drawPath(const std::vector<int> &path)
+{
+    m_bob->clear();
+    int x = m_startX, y = m_startY;
+    for (int dir : path)
+    {
+        switch (dir) {
+            case 0: // left
+                x--;
+                break;
+            case 1: // right
+                x++;
+                break;
+            case 2: // top
+                y++;
+                break;
+            case 3: // bottom
+                y--;
+                break;
+            default:
+                break;
+        }
+        m_bob->drawDot(Vec2(GRID_WIDTH * (x + 0.5f), GRID_HEIGHT * (MAP_HEIGHT - y - 0.5f)), 10.f, Color4F(0.f, 0.f, 1.f, 1.f));
+    }
 }

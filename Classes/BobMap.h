@@ -15,13 +15,20 @@ USING_NS_CC;
 const int MAP_WIDTH = 15;
 const int MAP_HEIGHT = 10;
 
+struct PathInfo
+{
+    float fitness;
+    int length;
+};
+
 class BobMap : public Node
 {
 public:
     static int s_map[MAP_HEIGHT][MAP_WIDTH];
     CREATE_FUNC(BobMap);
     bool init();
-    float testRoute(const std::vector<int>& path);
+    PathInfo testRoute(const std::vector<int>& path);
+    void drawPath(const std::vector<int>& path);
     
 private:
     void drawMap();
