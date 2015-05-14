@@ -12,8 +12,6 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
 		46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
-		46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */; };
-		46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		503AE10017EB989F00D1A890 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FB17EB989F00D1A890 /* AppController.mm */; };
 		503AE10117EB989F00D1A890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FC17EB989F00D1A890 /* main.m */; };
@@ -59,10 +57,20 @@
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
 		DABD483095999368E11E7911 /* res in Resources */ = {isa = PBXBuildFile; fileRef = E4E9495E93D700EF88A10783 /* res */; };
-		F5B1797D1B0207B80045E86A /* Genetic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5B1797B1B0207B80045E86A /* Genetic.cpp */; };
-		F5B1797E1B0207B80045E86A /* Genetic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5B1797B1B0207B80045E86A /* Genetic.cpp */; };
-		F5FF66231B0320B000E39E22 /* BobMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5FF66211B0320B000E39E22 /* BobMap.cpp */; };
-		F5FF66241B0320B000E39E22 /* BobMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5FF66211B0320B000E39E22 /* BobMap.cpp */; };
+		F5BFE28F1B0471CB00EF65EB /* Genetic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BFE28D1B0471CB00EF65EB /* Genetic.cpp */; };
+		F5BFE2901B0471CB00EF65EB /* Genetic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BFE28D1B0471CB00EF65EB /* Genetic.cpp */; };
+		F5BFE2981B0471F100EF65EB /* BobMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BFE2921B0471F100EF65EB /* BobMap.cpp */; };
+		F5BFE2991B0471F100EF65EB /* BobMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BFE2921B0471F100EF65EB /* BobMap.cpp */; };
+		F5BFE29A1B0471F100EF65EB /* Genetic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BFE2941B0471F100EF65EB /* Genetic.cpp */; };
+		F5BFE29B1B0471F100EF65EB /* Genetic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BFE2941B0471F100EF65EB /* Genetic.cpp */; };
+		F5BFE29C1B0471F100EF65EB /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BFE2961B0471F100EF65EB /* HelloWorldScene.cpp */; };
+		F5BFE29D1B0471F100EF65EB /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BFE2961B0471F100EF65EB /* HelloWorldScene.cpp */; };
+		F5BFE2A01B04803E00EF65EB /* TestLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BFE29E1B04803E00EF65EB /* TestLayer.cpp */; };
+		F5BFE2A11B04803E00EF65EB /* TestLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BFE29E1B04803E00EF65EB /* TestLayer.cpp */; };
+		F5BFE2A31B0482FA00EF65EB /* thunderbolt_tex.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BFE2A21B0482FA00EF65EB /* thunderbolt_tex.png */; };
+		F5BFE2A41B0482FA00EF65EB /* thunderbolt_tex.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BFE2A21B0482FA00EF65EB /* thunderbolt_tex.png */; };
+		F5BFE2AF1B0485CE00EF65EB /* ThunderSlot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BFE2AD1B0485CE00EF65EB /* ThunderSlot.cpp */; };
+		F5BFE2B01B0485CE00EF65EB /* ThunderSlot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BFE2AD1B0485CE00EF65EB /* ThunderSlot.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,8 +81,6 @@
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		46880B8419C43A87006E1F66 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		46880B8519C43A87006E1F66 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
-		46880B8719C43A87006E1F66 /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503AE0FA17EB989F00D1A890 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ios/AppController.h; sourceTree = SOURCE_ROOT; };
@@ -121,10 +127,19 @@
 		E4E9495E93D700EF88A10783 /* res */ = {isa = PBXFileReference; lastKnownFileType = "?"; name = res; path = ../Resources/res; sourceTree = "<group>"; };
 		F0E04C57BAF67E6B4649EDAD /* libcocos2d Mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d Mac.a"; path = "/Applications/Cocos/frameworks/cocos2d-x-3.5/prebuilt/mac/libcocos2d Mac.a"; sourceTree = "<absolute>"; };
 		F3014FEF88BC17BF379EDC40 /* libcocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d iOS.a"; path = "/Applications/Cocos/frameworks/cocos2d-x-3.5/prebuilt/ios/libcocos2d iOS.a"; sourceTree = "<absolute>"; };
-		F5B1797B1B0207B80045E86A /* Genetic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Genetic.cpp; sourceTree = "<group>"; };
-		F5B1797C1B0207B80045E86A /* Genetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Genetic.h; sourceTree = "<group>"; };
-		F5FF66211B0320B000E39E22 /* BobMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BobMap.cpp; sourceTree = "<group>"; };
-		F5FF66221B0320B000E39E22 /* BobMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BobMap.h; sourceTree = "<group>"; };
+		F5BFE28D1B0471CB00EF65EB /* Genetic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Genetic.cpp; path = Ship/Genetic.cpp; sourceTree = "<group>"; };
+		F5BFE28E1B0471CB00EF65EB /* Genetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Genetic.h; path = Ship/Genetic.h; sourceTree = "<group>"; };
+		F5BFE2921B0471F100EF65EB /* BobMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BobMap.cpp; path = PathFinder/BobMap.cpp; sourceTree = "<group>"; };
+		F5BFE2931B0471F100EF65EB /* BobMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BobMap.h; path = PathFinder/BobMap.h; sourceTree = "<group>"; };
+		F5BFE2941B0471F100EF65EB /* Genetic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Genetic.cpp; path = PathFinder/Genetic.cpp; sourceTree = "<group>"; };
+		F5BFE2951B0471F100EF65EB /* Genetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Genetic.h; path = PathFinder/Genetic.h; sourceTree = "<group>"; };
+		F5BFE2961B0471F100EF65EB /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = PathFinder/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		F5BFE2971B0471F100EF65EB /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = PathFinder/HelloWorldScene.h; sourceTree = "<group>"; };
+		F5BFE29E1B04803E00EF65EB /* TestLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestLayer.cpp; sourceTree = "<group>"; };
+		F5BFE29F1B04803E00EF65EB /* TestLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLayer.h; sourceTree = "<group>"; };
+		F5BFE2A21B0482FA00EF65EB /* thunderbolt_tex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thunderbolt_tex.png; sourceTree = "<group>"; };
+		F5BFE2AD1B0485CE00EF65EB /* ThunderSlot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ThunderSlot.cpp; sourceTree = "<group>"; };
+		F5BFE2AE1B0485CE00EF65EB /* ThunderSlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThunderSlot.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +257,7 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F5BFE2A21B0482FA00EF65EB /* thunderbolt_tex.png */,
 				E4E9495E93D700EF88A10783 /* res */,
 			);
 			name = Resources;
@@ -251,14 +267,14 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F5BFE2AD1B0485CE00EF65EB /* ThunderSlot.cpp */,
+				F5BFE2AE1B0485CE00EF65EB /* ThunderSlot.h */,
+				F5BFE29E1B04803E00EF65EB /* TestLayer.cpp */,
+				F5BFE29F1B04803E00EF65EB /* TestLayer.h */,
+				F5BFE2911B0471D100EF65EB /* Ship */,
+				F5BFE28C1B04715100EF65EB /* PathFinder */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
-				46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */,
-				46880B8719C43A87006E1F66 /* HelloWorldScene.h */,
-				F5B1797B1B0207B80045E86A /* Genetic.cpp */,
-				F5B1797C1B0207B80045E86A /* Genetic.h */,
-				F5FF66211B0320B000E39E22 /* BobMap.cpp */,
-				F5FF66221B0320B000E39E22 /* BobMap.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -318,6 +334,28 @@
 			name = Icons;
 			path = ios;
 			sourceTree = SOURCE_ROOT;
+		};
+		F5BFE28C1B04715100EF65EB /* PathFinder */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFE2921B0471F100EF65EB /* BobMap.cpp */,
+				F5BFE2931B0471F100EF65EB /* BobMap.h */,
+				F5BFE2941B0471F100EF65EB /* Genetic.cpp */,
+				F5BFE2951B0471F100EF65EB /* Genetic.h */,
+				F5BFE2961B0471F100EF65EB /* HelloWorldScene.cpp */,
+				F5BFE2971B0471F100EF65EB /* HelloWorldScene.h */,
+			);
+			name = PathFinder;
+			sourceTree = "<group>";
+		};
+		F5BFE2911B0471D100EF65EB /* Ship */ = {
+			isa = PBXGroup;
+			children = (
+				F5BFE28D1B0471CB00EF65EB /* Genetic.cpp */,
+				F5BFE28E1B0471CB00EF65EB /* Genetic.h */,
+			);
+			name = Ship;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -395,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
+				F5BFE2A31B0482FA00EF65EB /* thunderbolt_tex.png in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
@@ -420,6 +459,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5BFE2A41B0482FA00EF65EB /* thunderbolt_tex.png in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				DABD483095999368E11E7911 /* res in Resources */,
 			);
@@ -432,13 +472,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5FF66231B0320B000E39E22 /* BobMap.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
-				F5B1797D1B0207B80045E86A /* Genetic.cpp in Sources */,
-				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
+				F5BFE28F1B0471CB00EF65EB /* Genetic.cpp in Sources */,
+				F5BFE2A01B04803E00EF65EB /* TestLayer.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				F5BFE2981B0471F100EF65EB /* BobMap.cpp in Sources */,
+				F5BFE29A1B0471F100EF65EB /* Genetic.cpp in Sources */,
+				F5BFE29C1B0471F100EF65EB /* HelloWorldScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				F5BFE2AF1B0485CE00EF65EB /* ThunderSlot.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,11 +489,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5BFE29B1B0471F100EF65EB /* Genetic.cpp in Sources */,
+				F5BFE2991B0471F100EF65EB /* BobMap.cpp in Sources */,
+				F5BFE29D1B0471F100EF65EB /* HelloWorldScene.cpp in Sources */,
+				F5BFE2B01B0485CE00EF65EB /* ThunderSlot.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				F5BFE2901B0471CB00EF65EB /* Genetic.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
-				46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
-				F5B1797E1B0207B80045E86A /* Genetic.cpp in Sources */,
-				F5FF66241B0320B000E39E22 /* BobMap.cpp in Sources */,
+				F5BFE2A11B04803E00EF65EB /* TestLayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
