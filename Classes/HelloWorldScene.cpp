@@ -38,7 +38,7 @@ bool HelloWorld::init()
     m_genetic->setMap(map);
     m_time = 0.f;
     
-
+    srand(time(nullptr));
     
     scheduleUpdate();
     return true;
@@ -47,7 +47,7 @@ bool HelloWorld::init()
 void HelloWorld::update(float dt)
 {
     m_time += dt;
-    if (m_time > 0.1f)
+//    if (m_time > 0.1f)
     {
         m_genetic->epoch();
     }

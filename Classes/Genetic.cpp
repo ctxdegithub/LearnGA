@@ -11,7 +11,16 @@
 
 void CGenetic::epoch()
 {
+    if (!m_bBusy)
+    {
+        return;
+    }
     updateFitnessScores();
+    if (fabs(m_fBestFitnessScore - 1.f) < FLT_EPSILON)
+    {
+        m_bBusy = false;
+    }
+    
     int newBobies = 0;
     std::vector<SGenome> vecBabyGenomes;
     while (newBobies < m_iPopSize)
