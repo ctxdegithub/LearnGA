@@ -46,6 +46,7 @@ public:
     void epoch();
     
 private:
+    void seletedAlogrithm();
     void crossover(const std::vector<int> &mum, const std::vector<int> &dad, std::vector<int> &baby1, std::vector<int> &baby2);
     void mutate(std::vector<int> &vecBits);
     void updateFittestScore();
