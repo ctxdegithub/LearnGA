@@ -57,8 +57,10 @@
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
 		DABD483095999368E11E7911 /* res in Resources */ = {isa = PBXBuildFile; fileRef = E4E9495E93D700EF88A10783 /* res */; };
-		F5BFE28F1B0471CB00EF65EB /* Genetic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BFE28D1B0471CB00EF65EB /* Genetic.cpp */; };
-		F5BFE2901B0471CB00EF65EB /* Genetic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BFE28D1B0471CB00EF65EB /* Genetic.cpp */; };
+		F59618C01B09D4630091B651 /* TSPGenetic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F59618BE1B09D4630091B651 /* TSPGenetic.cpp */; };
+		F59618C11B09D4630091B651 /* TSPGenetic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F59618BE1B09D4630091B651 /* TSPGenetic.cpp */; };
+		F59618C51B09FAA20091B651 /* TSPMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F59618C31B09FAA20091B651 /* TSPMap.cpp */; };
+		F59618C61B09FAA20091B651 /* TSPMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F59618C31B09FAA20091B651 /* TSPMap.cpp */; };
 		F5BFE2981B0471F100EF65EB /* BobMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BFE2921B0471F100EF65EB /* BobMap.cpp */; };
 		F5BFE2991B0471F100EF65EB /* BobMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BFE2921B0471F100EF65EB /* BobMap.cpp */; };
 		F5BFE29A1B0471F100EF65EB /* Genetic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BFE2941B0471F100EF65EB /* Genetic.cpp */; };
@@ -127,8 +129,10 @@
 		E4E9495E93D700EF88A10783 /* res */ = {isa = PBXFileReference; lastKnownFileType = "?"; name = res; path = ../Resources/res; sourceTree = "<group>"; };
 		F0E04C57BAF67E6B4649EDAD /* libcocos2d Mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d Mac.a"; path = "/Applications/Cocos/frameworks/cocos2d-x-3.5/prebuilt/mac/libcocos2d Mac.a"; sourceTree = "<absolute>"; };
 		F3014FEF88BC17BF379EDC40 /* libcocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d iOS.a"; path = "/Applications/Cocos/frameworks/cocos2d-x-3.5/prebuilt/ios/libcocos2d iOS.a"; sourceTree = "<absolute>"; };
-		F5BFE28D1B0471CB00EF65EB /* Genetic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Genetic.cpp; path = Ship/Genetic.cpp; sourceTree = "<group>"; };
-		F5BFE28E1B0471CB00EF65EB /* Genetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Genetic.h; path = Ship/Genetic.h; sourceTree = "<group>"; };
+		F59618BE1B09D4630091B651 /* TSPGenetic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TSPGenetic.cpp; path = TSP/TSPGenetic.cpp; sourceTree = "<group>"; };
+		F59618BF1B09D4630091B651 /* TSPGenetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSPGenetic.h; path = TSP/TSPGenetic.h; sourceTree = "<group>"; };
+		F59618C31B09FAA20091B651 /* TSPMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TSPMap.cpp; path = TSP/TSPMap.cpp; sourceTree = "<group>"; };
+		F59618C41B09FAA20091B651 /* TSPMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSPMap.h; path = TSP/TSPMap.h; sourceTree = "<group>"; };
 		F5BFE2921B0471F100EF65EB /* BobMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BobMap.cpp; path = PathFinder/BobMap.cpp; sourceTree = "<group>"; };
 		F5BFE2931B0471F100EF65EB /* BobMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BobMap.h; path = PathFinder/BobMap.h; sourceTree = "<group>"; };
 		F5BFE2941B0471F100EF65EB /* Genetic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Genetic.cpp; path = PathFinder/Genetic.cpp; sourceTree = "<group>"; };
@@ -267,11 +271,11 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F59618BD1B09D4390091B651 /* TSP */,
 				F5BFE2AD1B0485CE00EF65EB /* ThunderSlot.cpp */,
 				F5BFE2AE1B0485CE00EF65EB /* ThunderSlot.h */,
 				F5BFE29E1B04803E00EF65EB /* TestLayer.cpp */,
 				F5BFE29F1B04803E00EF65EB /* TestLayer.h */,
-				F5BFE2911B0471D100EF65EB /* Ship */,
 				F5BFE28C1B04715100EF65EB /* PathFinder */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
@@ -335,6 +339,17 @@
 			path = ios;
 			sourceTree = SOURCE_ROOT;
 		};
+		F59618BD1B09D4390091B651 /* TSP */ = {
+			isa = PBXGroup;
+			children = (
+				F59618BE1B09D4630091B651 /* TSPGenetic.cpp */,
+				F59618BF1B09D4630091B651 /* TSPGenetic.h */,
+				F59618C31B09FAA20091B651 /* TSPMap.cpp */,
+				F59618C41B09FAA20091B651 /* TSPMap.h */,
+			);
+			name = TSP;
+			sourceTree = "<group>";
+		};
 		F5BFE28C1B04715100EF65EB /* PathFinder */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,15 +361,6 @@
 				F5BFE2971B0471F100EF65EB /* HelloWorldScene.h */,
 			);
 			name = PathFinder;
-			sourceTree = "<group>";
-		};
-		F5BFE2911B0471D100EF65EB /* Ship */ = {
-			isa = PBXGroup;
-			children = (
-				F5BFE28D1B0471CB00EF65EB /* Genetic.cpp */,
-				F5BFE28E1B0471CB00EF65EB /* Genetic.h */,
-			);
-			name = Ship;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,14 +479,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
-				F5BFE28F1B0471CB00EF65EB /* Genetic.cpp in Sources */,
 				F5BFE2A01B04803E00EF65EB /* TestLayer.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				F5BFE2981B0471F100EF65EB /* BobMap.cpp in Sources */,
+				F59618C01B09D4630091B651 /* TSPGenetic.cpp in Sources */,
 				F5BFE29A1B0471F100EF65EB /* Genetic.cpp in Sources */,
 				F5BFE29C1B0471F100EF65EB /* HelloWorldScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				F59618C51B09FAA20091B651 /* TSPMap.cpp in Sources */,
 				F5BFE2AF1B0485CE00EF65EB /* ThunderSlot.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,11 +499,12 @@
 				F5BFE29B1B0471F100EF65EB /* Genetic.cpp in Sources */,
 				F5BFE2991B0471F100EF65EB /* BobMap.cpp in Sources */,
 				F5BFE29D1B0471F100EF65EB /* HelloWorldScene.cpp in Sources */,
+				F59618C11B09D4630091B651 /* TSPGenetic.cpp in Sources */,
 				F5BFE2B01B0485CE00EF65EB /* ThunderSlot.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
-				F5BFE2901B0471CB00EF65EB /* Genetic.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				F5BFE2A11B04803E00EF65EB /* TestLayer.cpp in Sources */,
+				F59618C61B09FAA20091B651 /* TSPMap.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

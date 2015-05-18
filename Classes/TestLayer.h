@@ -22,7 +22,6 @@ public:
     bool touchBegan(Touch* touch, Event* event);
     void touchMoved(Touch* touch, Event* event);
     void touchEnded(Touch* touch, Event* event);
-    virtual void test(){};
     
 private:
     ThunderSlot* m_streak;
