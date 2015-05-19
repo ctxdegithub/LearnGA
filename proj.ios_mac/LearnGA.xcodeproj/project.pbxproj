@@ -57,6 +57,14 @@
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
 		DABD483095999368E11E7911 /* res in Resources */ = {isa = PBXBuildFile; fileRef = E4E9495E93D700EF88A10783 /* res */; };
+		F578D1031B0B360200B913F8 /* TSPLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F578D1011B0B360200B913F8 /* TSPLayer.cpp */; };
+		F578D1041B0B360200B913F8 /* TSPLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F578D1011B0B360200B913F8 /* TSPLayer.cpp */; };
+		F578D1081B0B36DA00B913F8 /* EightNumLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F578D1061B0B36DA00B913F8 /* EightNumLayer.cpp */; };
+		F578D1091B0B36DA00B913F8 /* EightNumLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F578D1061B0B36DA00B913F8 /* EightNumLayer.cpp */; };
+		F578D10C1B0B36EA00B913F8 /* EightNumGA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F578D10A1B0B36EA00B913F8 /* EightNumGA.cpp */; };
+		F578D10D1B0B36EA00B913F8 /* EightNumGA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F578D10A1B0B36EA00B913F8 /* EightNumGA.cpp */; };
+		F578D1101B0B36F900B913F8 /* EightNumMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F578D10E1B0B36F900B913F8 /* EightNumMap.cpp */; };
+		F578D1111B0B36F900B913F8 /* EightNumMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F578D10E1B0B36F900B913F8 /* EightNumMap.cpp */; };
 		F59618C01B09D4630091B651 /* TSPGenetic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F59618BE1B09D4630091B651 /* TSPGenetic.cpp */; };
 		F59618C11B09D4630091B651 /* TSPGenetic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F59618BE1B09D4630091B651 /* TSPGenetic.cpp */; };
 		F59618C51B09FAA20091B651 /* TSPMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F59618C31B09FAA20091B651 /* TSPMap.cpp */; };
@@ -67,12 +75,8 @@
 		F5BFE29B1B0471F100EF65EB /* Genetic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BFE2941B0471F100EF65EB /* Genetic.cpp */; };
 		F5BFE29C1B0471F100EF65EB /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BFE2961B0471F100EF65EB /* HelloWorldScene.cpp */; };
 		F5BFE29D1B0471F100EF65EB /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BFE2961B0471F100EF65EB /* HelloWorldScene.cpp */; };
-		F5BFE2A01B04803E00EF65EB /* TestLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BFE29E1B04803E00EF65EB /* TestLayer.cpp */; };
-		F5BFE2A11B04803E00EF65EB /* TestLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BFE29E1B04803E00EF65EB /* TestLayer.cpp */; };
 		F5BFE2A31B0482FA00EF65EB /* thunderbolt_tex.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BFE2A21B0482FA00EF65EB /* thunderbolt_tex.png */; };
 		F5BFE2A41B0482FA00EF65EB /* thunderbolt_tex.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BFE2A21B0482FA00EF65EB /* thunderbolt_tex.png */; };
-		F5BFE2AF1B0485CE00EF65EB /* ThunderSlot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BFE2AD1B0485CE00EF65EB /* ThunderSlot.cpp */; };
-		F5BFE2B01B0485CE00EF65EB /* ThunderSlot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5BFE2AD1B0485CE00EF65EB /* ThunderSlot.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -129,6 +133,14 @@
 		E4E9495E93D700EF88A10783 /* res */ = {isa = PBXFileReference; lastKnownFileType = "?"; name = res; path = ../Resources/res; sourceTree = "<group>"; };
 		F0E04C57BAF67E6B4649EDAD /* libcocos2d Mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d Mac.a"; path = "/Applications/Cocos/frameworks/cocos2d-x-3.5/prebuilt/mac/libcocos2d Mac.a"; sourceTree = "<absolute>"; };
 		F3014FEF88BC17BF379EDC40 /* libcocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d iOS.a"; path = "/Applications/Cocos/frameworks/cocos2d-x-3.5/prebuilt/ios/libcocos2d iOS.a"; sourceTree = "<absolute>"; };
+		F578D1011B0B360200B913F8 /* TSPLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TSPLayer.cpp; path = TSP/TSPLayer.cpp; sourceTree = "<group>"; };
+		F578D1021B0B360200B913F8 /* TSPLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSPLayer.h; path = TSP/TSPLayer.h; sourceTree = "<group>"; };
+		F578D1061B0B36DA00B913F8 /* EightNumLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EightNumLayer.cpp; path = EightNum/EightNumLayer.cpp; sourceTree = "<group>"; };
+		F578D1071B0B36DA00B913F8 /* EightNumLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EightNumLayer.h; path = EightNum/EightNumLayer.h; sourceTree = "<group>"; };
+		F578D10A1B0B36EA00B913F8 /* EightNumGA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EightNumGA.cpp; path = EightNum/EightNumGA.cpp; sourceTree = "<group>"; };
+		F578D10B1B0B36EA00B913F8 /* EightNumGA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EightNumGA.h; path = EightNum/EightNumGA.h; sourceTree = "<group>"; };
+		F578D10E1B0B36F900B913F8 /* EightNumMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EightNumMap.cpp; path = EightNum/EightNumMap.cpp; sourceTree = "<group>"; };
+		F578D10F1B0B36F900B913F8 /* EightNumMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EightNumMap.h; path = EightNum/EightNumMap.h; sourceTree = "<group>"; };
 		F59618BE1B09D4630091B651 /* TSPGenetic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TSPGenetic.cpp; path = TSP/TSPGenetic.cpp; sourceTree = "<group>"; };
 		F59618BF1B09D4630091B651 /* TSPGenetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSPGenetic.h; path = TSP/TSPGenetic.h; sourceTree = "<group>"; };
 		F59618C31B09FAA20091B651 /* TSPMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TSPMap.cpp; path = TSP/TSPMap.cpp; sourceTree = "<group>"; };
@@ -139,11 +151,7 @@
 		F5BFE2951B0471F100EF65EB /* Genetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Genetic.h; path = PathFinder/Genetic.h; sourceTree = "<group>"; };
 		F5BFE2961B0471F100EF65EB /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = PathFinder/HelloWorldScene.cpp; sourceTree = "<group>"; };
 		F5BFE2971B0471F100EF65EB /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = PathFinder/HelloWorldScene.h; sourceTree = "<group>"; };
-		F5BFE29E1B04803E00EF65EB /* TestLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestLayer.cpp; sourceTree = "<group>"; };
-		F5BFE29F1B04803E00EF65EB /* TestLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLayer.h; sourceTree = "<group>"; };
 		F5BFE2A21B0482FA00EF65EB /* thunderbolt_tex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thunderbolt_tex.png; sourceTree = "<group>"; };
-		F5BFE2AD1B0485CE00EF65EB /* ThunderSlot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ThunderSlot.cpp; sourceTree = "<group>"; };
-		F5BFE2AE1B0485CE00EF65EB /* ThunderSlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThunderSlot.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,11 +279,8 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F578D1051B0B36B800B913F8 /* EightNum */,
 				F59618BD1B09D4390091B651 /* TSP */,
-				F5BFE2AD1B0485CE00EF65EB /* ThunderSlot.cpp */,
-				F5BFE2AE1B0485CE00EF65EB /* ThunderSlot.h */,
-				F5BFE29E1B04803E00EF65EB /* TestLayer.cpp */,
-				F5BFE29F1B04803E00EF65EB /* TestLayer.h */,
 				F5BFE28C1B04715100EF65EB /* PathFinder */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
@@ -339,9 +344,24 @@
 			path = ios;
 			sourceTree = SOURCE_ROOT;
 		};
+		F578D1051B0B36B800B913F8 /* EightNum */ = {
+			isa = PBXGroup;
+			children = (
+				F578D1061B0B36DA00B913F8 /* EightNumLayer.cpp */,
+				F578D1071B0B36DA00B913F8 /* EightNumLayer.h */,
+				F578D10A1B0B36EA00B913F8 /* EightNumGA.cpp */,
+				F578D10B1B0B36EA00B913F8 /* EightNumGA.h */,
+				F578D10E1B0B36F900B913F8 /* EightNumMap.cpp */,
+				F578D10F1B0B36F900B913F8 /* EightNumMap.h */,
+			);
+			name = EightNum;
+			sourceTree = "<group>";
+		};
 		F59618BD1B09D4390091B651 /* TSP */ = {
 			isa = PBXGroup;
 			children = (
+				F578D1011B0B360200B913F8 /* TSPLayer.cpp */,
+				F578D1021B0B360200B913F8 /* TSPLayer.h */,
 				F59618BE1B09D4630091B651 /* TSPGenetic.cpp */,
 				F59618BF1B09D4630091B651 /* TSPGenetic.h */,
 				F59618C31B09FAA20091B651 /* TSPMap.cpp */,
@@ -479,16 +499,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
-				F5BFE2A01B04803E00EF65EB /* TestLayer.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				F578D1081B0B36DA00B913F8 /* EightNumLayer.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				F578D10C1B0B36EA00B913F8 /* EightNumGA.cpp in Sources */,
+				F578D1031B0B360200B913F8 /* TSPLayer.cpp in Sources */,
+				F578D1101B0B36F900B913F8 /* EightNumMap.cpp in Sources */,
 				F5BFE2981B0471F100EF65EB /* BobMap.cpp in Sources */,
 				F59618C01B09D4630091B651 /* TSPGenetic.cpp in Sources */,
 				F5BFE29A1B0471F100EF65EB /* Genetic.cpp in Sources */,
 				F5BFE29C1B0471F100EF65EB /* HelloWorldScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				F59618C51B09FAA20091B651 /* TSPMap.cpp in Sources */,
-				F5BFE2AF1B0485CE00EF65EB /* ThunderSlot.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,13 +519,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5BFE29B1B0471F100EF65EB /* Genetic.cpp in Sources */,
+				F578D1091B0B36DA00B913F8 /* EightNumLayer.cpp in Sources */,
 				F5BFE2991B0471F100EF65EB /* BobMap.cpp in Sources */,
 				F5BFE29D1B0471F100EF65EB /* HelloWorldScene.cpp in Sources */,
+				F578D1041B0B360200B913F8 /* TSPLayer.cpp in Sources */,
 				F59618C11B09D4630091B651 /* TSPGenetic.cpp in Sources */,
-				F5BFE2B01B0485CE00EF65EB /* ThunderSlot.cpp in Sources */,
+				F578D1111B0B36F900B913F8 /* EightNumMap.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
-				F5BFE2A11B04803E00EF65EB /* TestLayer.cpp in Sources */,
+				F578D10D1B0B36EA00B913F8 /* EightNumGA.cpp in Sources */,
 				F59618C61B09FAA20091B651 /* TSPMap.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,6 +17,7 @@ void CTSPGenetic::createStartGeneration()
     }
     m_iFittestGenome = 0;
     m_iGeneration = 0;
+    m_fTotalFittestScore = 0.f;
     m_fShortestRoute = 999999999.f;
 }
 
@@ -208,7 +209,9 @@ void CTSPGenetic::updateFittestScore()
     for (auto& pop : m_vecGenomes)
     {
         pop.fFitness = m_fLongestRoute - pop.fFitness;
+        m_fTotalFittestScore += pop.fFitness;
     }
+    
     CCLOG("generation: %d, shortest: %f, longest: %f", m_iGeneration, m_fShortestRoute, m_fLongestRoute);
 }
 

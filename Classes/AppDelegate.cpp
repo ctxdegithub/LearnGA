@@ -1,5 +1,5 @@
 #include "AppDelegate.h"
-#include "TestLayer.h"
+#include "EightNum/EightNumLayer.h"
 
 USING_NS_CC;
 
@@ -42,7 +42,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     FileUtils::getInstance()->addSearchPath("res");
 
     // create a scene. it's an autorelease object
-    auto scene = TestLayer::createScene();
+    auto scene = EightNumLayer::createScene();
 
     // run
     director->runWithScene(scene);
