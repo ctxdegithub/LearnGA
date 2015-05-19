@@ -10,6 +10,15 @@
     <Filter Include="src">
       <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\TSP">
+      <UniqueIdentifier>{16763655-e2cd-498b-93e8-0bc305dc707a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\PathFinder">
+      <UniqueIdentifier>{a85c2224-029e-479d-a9ae-85c5accfa0ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\EightNum">
+      <UniqueIdentifier>{18aaaa7d-33d0-4b83-be62-9546f447ef37}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -18,8 +27,35 @@
     <ClCompile Include="..\Classes\AppDelegate.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+    <ClCompile Include="..\Classes\ThunderSlot.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TSP\TSPGenetic.cpp">
+      <Filter>src\TSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TSP\TSPLayer.cpp">
+      <Filter>src\TSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TSP\TSPMap.cpp">
+      <Filter>src\TSP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PathFinder\BobMap.cpp">
+      <Filter>src\PathFinder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PathFinder\Genetic.cpp">
+      <Filter>src\PathFinder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PathFinder\HelloWorldScene.cpp">
+      <Filter>src\PathFinder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\EightNum\EightNumGA.cpp">
+      <Filter>src\EightNum</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\EightNum\EightNumLayer.cpp">
+      <Filter>src\EightNum</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\EightNum\EightNumMap.cpp">
+      <Filter>src\EightNum</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -29,8 +65,35 @@
     <ClInclude Include="..\Classes\AppDelegate.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\HelloWorldScene.h">
+    <ClInclude Include="..\Classes\ThunderSlot.h">
       <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TSP\TSPGenetic.h">
+      <Filter>src\TSP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TSP\TSPLayer.h">
+      <Filter>src\TSP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TSP\TSPMap.h">
+      <Filter>src\TSP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PathFinder\BobMap.h">
+      <Filter>src\PathFinder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PathFinder\Genetic.h">
+      <Filter>src\PathFinder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PathFinder\HelloWorldScene.h">
+      <Filter>src\PathFinder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\EightNum\EightNumGA.h">
+      <Filter>src\EightNum</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\EightNum\EightNumLayer.h">
+      <Filter>src\EightNum</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\EightNum\EightNumMap.h">
+      <Filter>src\EightNum</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

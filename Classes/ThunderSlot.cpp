@@ -7,15 +7,6 @@
 //
 
 #include "ThunderSlot.h"
-#include "math/CCVertex.h"
-#include "base/CCDirector.h"
-#include "renderer/CCTextureCache.h"
-#include "renderer/ccGLStateCache.h"
-#include "renderer/CCTexture2D.h"
-#include "renderer/CCRenderer.h"
-#include "renderer/CCGLProgramState.h"
-
-NS_CC_BEGIN
 
 ThunderSlot::ThunderSlot()
 : _fastMode(false)
@@ -243,7 +234,7 @@ void ThunderSlot::update(float delta)
     }
     static float curTime = 0;
     curTime += delta * 0.2f;
-    std::stringstream str;
+	std::stringstream str;
     _pointVertexes[0] = _positionR;
     Vec2 offset = Vec2(cosf(_angle), sinf(_angle)) * 20;
     for (int i=1; i<_maxPoints; ++i)
@@ -314,4 +305,3 @@ void ThunderSlot::draw(Renderer *renderer, const Mat4 &transform, uint32_t flags
     renderer->addCommand(&_customCommand);
 }
 
-NS_CC_END

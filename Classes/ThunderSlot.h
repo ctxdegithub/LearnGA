@@ -9,23 +9,11 @@
 #ifndef __LearnGA__TunderSlot__
 #define __LearnGA__TunderSlot__
 
-#include "base/CCProtocols.h"
-#include "2d/CCNode.h"
-#include "renderer/CCCustomCommand.h"
+#include "cocos2d.h"
+USING_NS_CC;
 
-NS_CC_BEGIN
 
-class Texture2D;
-
-/**
- * @addtogroup _2d
- * @{
- */
-
-/** @class MotionStreak.
- * @brief Creates a trailing path.
- */
-class CC_DLL ThunderSlot : public Node, public TextureProtocol
+class ThunderSlot : public Node, public TextureProtocol
 {
 public:
     /** Creates and initializes a motion streak with fade in seconds, minimum segments, stroke's width, color, texture filename.
@@ -130,6 +118,9 @@ public:
     virtual void setOpacityModifyRGB(bool value) override;
     virtual bool isOpacityModifyRGB() const override;
     
+	float getAngle() { return _angle; }
+	void setAngle(float angle) { _angle = angle; }
+
 CC_CONSTRUCTOR_ACCESS:
     ThunderSlot();
     virtual ~ThunderSlot();
@@ -156,7 +147,7 @@ protected:
     float _fadeDelta;
     float _minSeg;
     
-    CC_SYNTHESIZE(float, _angle, Angle);
+	float _angle;
     
     unsigned int _maxPoints;
     unsigned int _nuPoints;
@@ -176,10 +167,5 @@ protected:
 private:
     CC_DISALLOW_COPY_AND_ASSIGN(ThunderSlot);
 };
-
-// end of _2d group
-/// @}
-
-NS_CC_END
 
 #endif /* defined(__LearnGA__TunderSlot__) */
