@@ -9,6 +9,7 @@
 #include "EightNumMap.h"
 
 const int MAP_EIGHT[] = {2, 4, 5, 8, 1, 9, 6, 3, 7};
+const int ZERO_POS = 5;
 const int MAP_TARGET[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 const float GRID_INTERVAL = 100.f;
 const Vec2 OFFSET = Vec2(-150.f, -150.f);
