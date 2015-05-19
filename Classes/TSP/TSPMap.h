@@ -15,8 +15,8 @@ USING_NS_CC;
 class CTSPMap : public Node
 {
 public:
-    CREATE_FUNC(CTSPMap);
-    bool init();
+    static CTSPMap* create(int numCities);
+    bool init(int numCities);
     void update(float dt);
     float getDistance(const std::vector<int>& path);
     

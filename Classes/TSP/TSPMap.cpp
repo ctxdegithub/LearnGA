@@ -7,13 +7,29 @@
 //
 
 #include "TSPMap.h"
+#define CITY_SIZE 5.f
 
-bool CTSPMap::init()
+
+CTSPMap* CTSPMap::create(int numCities)
+{
+    auto map = new CTSPMap;
+    if (map && map->init(numCities))
+    {
+        map->autorelease();
+        return map;
+    }
+    
+    delete map;
+    return nullptr;
+}
+
+bool CTSPMap::init(int numCities)
 {
     if (!Node::init())
     {
         return false;
     }
+    _numCities = numCities;
     
     _drawNode = DrawNode::create();
     addChild(_drawNode);
@@ -22,6 +38,7 @@ bool CTSPMap::init()
     addChild(_drawPath);
     
     drawCities();
+    calculateBestPath();
     
     return true;
 }
@@ -29,7 +46,7 @@ bool CTSPMap::init()
 void CTSPMap::calculateBestPath()
 {
     _bestDistance = 0.f;
-    auto& pos1 = _vecCitiesPos[0];
+    auto pos1 = _vecCitiesPos[0];
     for (int i=1; i<_numCities; ++i)
     {
         _bestDistance += pos1.getDistance(_vecCitiesPos[i]);
@@ -41,7 +58,7 @@ void CTSPMap::calculateBestPath()
 float CTSPMap::getDistance(const std::vector<int>& path)
 {
     float pathLength = 0.f;
-    auto& pos1 = _vecCitiesPos[path[0]];
+    auto pos1 = _vecCitiesPos[path[0]];
     for (int i=1; i<path.size(); ++i)
     {
         pathLength += pos1.getDistance(_vecCitiesPos[path[i]]);
@@ -63,12 +80,12 @@ void CTSPMap::drawCities()
 {
     _drawNode->clear();
     _vecCitiesPos.clear();
-    float delta = M_PI / _numCities;
+    float delta = M_PI * 2 / _numCities;
     for (int i=0; i<_numCities; ++i)
     {
-        auto curPos = Vec2(cosf(delta * i), sinf(delta * i)) * 200;
+        auto curPos = Vec2(cosf(delta * i), sinf(delta * i)) * 300;
         _vecCitiesPos.push_back(curPos);
-        _drawNode->drawDot(curPos, 20, Color4F(1.f, 1.f, 0.f, 1.f));
+        _drawNode->drawDot(curPos, CITY_SIZE, Color4F(1.f, 1.f, 0.f, 1.f));
     }
 }
 
@@ -84,4 +101,5 @@ void CTSPMap::drawPath(const std::vector<int>& path)
         pos1 = pos2;
         
     }
+    _drawPath->drawLine(pos1, _vecCitiesPos[path[0]], Color4F(1.f, 0.f, 0.f, 1.f));
 }

@@ -7,6 +7,8 @@
 //
 
 #include "TestLayer.h"
+#include "TSP/TSPMap.h"
+#include "TSP/TSPGenetic.h"
 
 Scene* TestLayer::createScene()
 {
@@ -23,6 +25,13 @@ bool TestLayer::init()
     {
         return false;
     }
+    srand(time(nullptr));
+    _tspGenetic = new CTSPGenetic(POP_SIZE, NUM_CITIES, CROSSOVER_RATE, MUTATION_RATE);
+    _tspMap = CTSPMap::create(NUM_CITIES);
+    addChild(_tspMap);
+    auto size = Director::getInstance()->getVisibleSize();
+    _tspMap->setPosition(Vec2(size.width * 0.5f, size.height * 0.5f));
+    _tspGenetic->setTSPMap(_tspMap);
     
     m_streak = ThunderSlot::create(0.5, 0.1, 70, Color3B(255,255,255), "thunderbolt_tex.png");
     m_streak->setPosition(Vec2(100, 100));
@@ -36,7 +45,7 @@ bool TestLayer::init()
     touchListener->onTouchEnded = CC_CALLBACK_2(TestLayer::touchEnded, this);
     
     Director::getInstance()->getEventDispatcher()->addEventListenerWithSceneGraphPriority(touchListener, this);
-    
+    this->scheduleUpdate();
     return true;
 }
 
@@ -54,4 +63,13 @@ void TestLayer::touchMoved(cocos2d::Touch *touch, cocos2d::Event *event)
 void TestLayer::touchEnded(cocos2d::Touch *touch, cocos2d::Event *event)
 {
     
+}
+
+void TestLayer::update(float dt)
+{
+    if (_tspGenetic->getBusy())
+    {
+        _tspGenetic->epoch();
+    }
+   
 }

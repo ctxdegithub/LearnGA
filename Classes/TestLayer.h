@@ -13,6 +13,9 @@
 #include "ThunderSlot.h"
 USING_NS_CC;
 
+class CTSPMap;
+class CTSPGenetic;
+
 class TestLayer : public Layer
 {
 public:
@@ -22,9 +25,12 @@ public:
     bool touchBegan(Touch* touch, Event* event);
     void touchMoved(Touch* touch, Event* event);
     void touchEnded(Touch* touch, Event* event);
+    void update(float dt);
     
 private:
     ThunderSlot* m_streak;
+    CTSPGenetic* _tspGenetic;
+    CTSPMap* _tspMap;
 };
 
 #endif /* defined(__LearnGA__TestLayer__) */
