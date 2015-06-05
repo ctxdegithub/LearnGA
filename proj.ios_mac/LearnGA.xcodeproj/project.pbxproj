@@ -57,6 +57,10 @@
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
 		DABD483095999368E11E7911 /* res in Resources */ = {isa = PBXBuildFile; fileRef = E4E9495E93D700EF88A10783 /* res */; };
+		F5274F5B1B1023BF006F177A /* LandMoonLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5274F591B1023BF006F177A /* LandMoonLayer.cpp */; };
+		F5274F5C1B1023BF006F177A /* LandMoonLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5274F591B1023BF006F177A /* LandMoonLayer.cpp */; };
+		F5274F601B1023F4006F177A /* LandGenetic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5274F5E1B1023F4006F177A /* LandGenetic.cpp */; };
+		F5274F611B1023F4006F177A /* LandGenetic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5274F5E1B1023F4006F177A /* LandGenetic.cpp */; };
 		F578D1031B0B360200B913F8 /* TSPLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F578D1011B0B360200B913F8 /* TSPLayer.cpp */; };
 		F578D1041B0B360200B913F8 /* TSPLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F578D1011B0B360200B913F8 /* TSPLayer.cpp */; };
 		F578D1081B0B36DA00B913F8 /* EightNumLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F578D1061B0B36DA00B913F8 /* EightNumLayer.cpp */; };
@@ -65,6 +69,8 @@
 		F578D10D1B0B36EA00B913F8 /* EightNumGA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F578D10A1B0B36EA00B913F8 /* EightNumGA.cpp */; };
 		F578D1101B0B36F900B913F8 /* EightNumMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F578D10E1B0B36F900B913F8 /* EightNumMap.cpp */; };
 		F578D1111B0B36F900B913F8 /* EightNumMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F578D10E1B0B36F900B913F8 /* EightNumMap.cpp */; };
+		F58337181B16079C00E718F1 /* Lander.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F58337161B16079C00E718F1 /* Lander.cpp */; };
+		F58337191B16079C00E718F1 /* Lander.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F58337161B16079C00E718F1 /* Lander.cpp */; };
 		F59618C01B09D4630091B651 /* TSPGenetic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F59618BE1B09D4630091B651 /* TSPGenetic.cpp */; };
 		F59618C11B09D4630091B651 /* TSPGenetic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F59618BE1B09D4630091B651 /* TSPGenetic.cpp */; };
 		F59618C51B09FAA20091B651 /* TSPMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F59618C31B09FAA20091B651 /* TSPMap.cpp */; };
@@ -133,6 +139,10 @@
 		E4E9495E93D700EF88A10783 /* res */ = {isa = PBXFileReference; lastKnownFileType = "?"; name = res; path = ../Resources/res; sourceTree = "<group>"; };
 		F0E04C57BAF67E6B4649EDAD /* libcocos2d Mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d Mac.a"; path = "/Applications/Cocos/frameworks/cocos2d-x-3.5/prebuilt/mac/libcocos2d Mac.a"; sourceTree = "<absolute>"; };
 		F3014FEF88BC17BF379EDC40 /* libcocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d iOS.a"; path = "/Applications/Cocos/frameworks/cocos2d-x-3.5/prebuilt/ios/libcocos2d iOS.a"; sourceTree = "<absolute>"; };
+		F5274F591B1023BF006F177A /* LandMoonLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LandMoonLayer.cpp; path = LandMoon/LandMoonLayer.cpp; sourceTree = "<group>"; };
+		F5274F5A1B1023BF006F177A /* LandMoonLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LandMoonLayer.h; path = LandMoon/LandMoonLayer.h; sourceTree = "<group>"; };
+		F5274F5E1B1023F4006F177A /* LandGenetic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LandGenetic.cpp; path = LandMoon/LandGenetic.cpp; sourceTree = "<group>"; };
+		F5274F5F1B1023F4006F177A /* LandGenetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LandGenetic.h; path = LandMoon/LandGenetic.h; sourceTree = "<group>"; };
 		F578D1011B0B360200B913F8 /* TSPLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TSPLayer.cpp; path = TSP/TSPLayer.cpp; sourceTree = "<group>"; };
 		F578D1021B0B360200B913F8 /* TSPLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSPLayer.h; path = TSP/TSPLayer.h; sourceTree = "<group>"; };
 		F578D1061B0B36DA00B913F8 /* EightNumLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EightNumLayer.cpp; path = EightNum/EightNumLayer.cpp; sourceTree = "<group>"; };
@@ -141,6 +151,8 @@
 		F578D10B1B0B36EA00B913F8 /* EightNumGA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EightNumGA.h; path = EightNum/EightNumGA.h; sourceTree = "<group>"; };
 		F578D10E1B0B36F900B913F8 /* EightNumMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EightNumMap.cpp; path = EightNum/EightNumMap.cpp; sourceTree = "<group>"; };
 		F578D10F1B0B36F900B913F8 /* EightNumMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EightNumMap.h; path = EightNum/EightNumMap.h; sourceTree = "<group>"; };
+		F58337161B16079C00E718F1 /* Lander.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Lander.cpp; path = LandMoon/Lander.cpp; sourceTree = "<group>"; };
+		F58337171B16079C00E718F1 /* Lander.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Lander.h; path = LandMoon/Lander.h; sourceTree = "<group>"; };
 		F59618BE1B09D4630091B651 /* TSPGenetic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TSPGenetic.cpp; path = TSP/TSPGenetic.cpp; sourceTree = "<group>"; };
 		F59618BF1B09D4630091B651 /* TSPGenetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSPGenetic.h; path = TSP/TSPGenetic.h; sourceTree = "<group>"; };
 		F59618C31B09FAA20091B651 /* TSPMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TSPMap.cpp; path = TSP/TSPMap.cpp; sourceTree = "<group>"; };
@@ -279,6 +291,7 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F5274F5D1B1023C4006F177A /* LandMoon */,
 				F578D1051B0B36B800B913F8 /* EightNum */,
 				F59618BD1B09D4390091B651 /* TSP */,
 				F5BFE28C1B04715100EF65EB /* PathFinder */,
@@ -343,6 +356,19 @@
 			name = Icons;
 			path = ios;
 			sourceTree = SOURCE_ROOT;
+		};
+		F5274F5D1B1023C4006F177A /* LandMoon */ = {
+			isa = PBXGroup;
+			children = (
+				F58337161B16079C00E718F1 /* Lander.cpp */,
+				F58337171B16079C00E718F1 /* Lander.h */,
+				F5274F591B1023BF006F177A /* LandMoonLayer.cpp */,
+				F5274F5A1B1023BF006F177A /* LandMoonLayer.h */,
+				F5274F5E1B1023F4006F177A /* LandGenetic.cpp */,
+				F5274F5F1B1023F4006F177A /* LandGenetic.h */,
+			);
+			name = LandMoon;
+			sourceTree = "<group>";
 		};
 		F578D1051B0B36B800B913F8 /* EightNum */ = {
 			isa = PBXGroup;
@@ -499,6 +525,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				F58337181B16079C00E718F1 /* Lander.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				F578D1081B0B36DA00B913F8 /* EightNumLayer.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
@@ -507,8 +534,10 @@
 				F578D1101B0B36F900B913F8 /* EightNumMap.cpp in Sources */,
 				F5BFE2981B0471F100EF65EB /* BobMap.cpp in Sources */,
 				F59618C01B09D4630091B651 /* TSPGenetic.cpp in Sources */,
+				F5274F601B1023F4006F177A /* LandGenetic.cpp in Sources */,
 				F5BFE29A1B0471F100EF65EB /* Genetic.cpp in Sources */,
 				F5BFE29C1B0471F100EF65EB /* HelloWorldScene.cpp in Sources */,
+				F5274F5B1B1023BF006F177A /* LandMoonLayer.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				F59618C51B09FAA20091B651 /* TSPMap.cpp in Sources */,
 			);
@@ -521,14 +550,17 @@
 				F5BFE29B1B0471F100EF65EB /* Genetic.cpp in Sources */,
 				F578D1091B0B36DA00B913F8 /* EightNumLayer.cpp in Sources */,
 				F5BFE2991B0471F100EF65EB /* BobMap.cpp in Sources */,
+				F5274F5C1B1023BF006F177A /* LandMoonLayer.cpp in Sources */,
 				F5BFE29D1B0471F100EF65EB /* HelloWorldScene.cpp in Sources */,
 				F578D1041B0B360200B913F8 /* TSPLayer.cpp in Sources */,
 				F59618C11B09D4630091B651 /* TSPGenetic.cpp in Sources */,
+				F5274F611B1023F4006F177A /* LandGenetic.cpp in Sources */,
 				F578D1111B0B36F900B913F8 /* EightNumMap.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				F578D10D1B0B36EA00B913F8 /* EightNumGA.cpp in Sources */,
 				F59618C61B09FAA20091B651 /* TSPMap.cpp in Sources */,
+				F58337191B16079C00E718F1 /* Lander.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,10 +19,10 @@ USING_NS_CC;
 
 struct SEightGenome
 {
-    int fittness;
+    int fitness;
     std::vector<int> vecPath;
-    SEightGenome() : fittness(0.f) {}
-    SEightGenome(int pathLen) : fittness(0)
+    SEightGenome() : fitness(0.f) {}
+    SEightGenome(int pathLen) : fitness(0)
     {
         for (int i=0; i<pathLen; ++i)
         {
@@ -55,7 +55,7 @@ private:
     void crossover(const std::vector<int>& mum, const std::vector<int>& dad, std::vector<int>& baby1, std::vector<int>& baby2);
     void mutate(std::vector<int>& gene);
     SEightGenome rouletteWheelSelection();
-    void updateFittnessScore();
+	void updateFitnessScore();
     void reset();
     
 private:
@@ -68,7 +68,7 @@ private:
     int _shortestLength;
     int _longestLength;
     
-    int _totalFittnessScore;
+    int _totalFitnessScore;
     float _crossoverRate;
     float _mutationRate;
 

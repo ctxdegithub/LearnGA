@@ -80,7 +80,7 @@ PathInfo BobMap::testRoute(const std::vector<int> &path)
         }
         m_bob->drawDot(Vec2(GRID_WIDTH * (x + 0.5f), GRID_HEIGHT * (MAP_HEIGHT - y - 0.5f)), 20.f, Color4F(1.f, 1.f, 0.f, 1.f));
     }
-    pathInfo.fitness = 1.f / (1.f + fabs(m_endX - x) + fabs(m_endY - y));
+    pathInfo.fitness = 1.f / (1.f + fabs((float)m_endX - x) + fabs((float)m_endY - y));
     return pathInfo;
 }
 

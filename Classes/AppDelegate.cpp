@@ -1,5 +1,5 @@
 #include "AppDelegate.h"
-#include "EightNum/EightNumLayer.h"
+#include "LandMoon/LandMoonLayer.h"
 
 USING_NS_CC;
 
@@ -27,11 +27,11 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
-        glview = GLViewImpl::createWithRect("LearnGA", Rect(0, 0, 960, 640));
+        glview = GLViewImpl::createWithRect("LearnGA", Rect(0, 0, 400, 400));
         director->setOpenGLView(glview);
     }
 
-    director->getOpenGLView()->setDesignResolutionSize(960, 640, ResolutionPolicy::SHOW_ALL);
+    director->getOpenGLView()->setDesignResolutionSize(400, 400, ResolutionPolicy::SHOW_ALL);
 
     // turn on display FPS
     director->setDisplayStats(true);
@@ -42,7 +42,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     FileUtils::getInstance()->addSearchPath("res");
 
     // create a scene. it's an autorelease object
-    auto scene = EightNumLayer::createScene();
+	auto scene = LandMoonLayer::createScene();
 
     // run
     director->runWithScene(scene);

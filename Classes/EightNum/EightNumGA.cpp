@@ -12,7 +12,7 @@
 void EightNumGA::epoch()
 {
     reset();
-    updateFittnessScore();
+    updateFitnessScore();
     if (!_bBusy)
     {
         return;
@@ -82,12 +82,12 @@ void EightNumGA::mutate(std::vector<int>& gene)
 
 SEightGenome EightNumGA::rouletteWheelSelection()
 {
-    float selScore = CCRANDOM_0_1() * _totalFittnessScore;
+    float selScore = CCRANDOM_0_1() * _totalFitnessScore;
     float curScore = 0.f;
     int selIndex = 0;
     for (int i=0; i<_popSize; ++i)
     {
-        curScore += _vecChromo[i].fittness;
+        curScore += _vecChromo[i].fitness;
         if (curScore > selScore)
         {
             selIndex = i;
@@ -97,17 +97,17 @@ SEightGenome EightNumGA::rouletteWheelSelection()
     return _vecChromo[selIndex];
 }
 
-void EightNumGA::updateFittnessScore()
+void EightNumGA::updateFitnessScore()
 {
-    int fittnessScore;
+    int fitnessScore;
     for (int i=0; i<_popSize; ++i)
     {
-        fittnessScore = _eightMap->testFittnessScore(_vecChromo[i].vecPath);
+        fitnessScore = _eightMap->testFittnessScore(_vecChromo[i].vecPath);
        
-        _vecChromo[i].fittness = fittnessScore;
-        _totalFittnessScore += _vecChromo[i].fittness;
+        _vecChromo[i].fitness = fitnessScore;
+		_totalFitnessScore += _vecChromo[i].fitness;
         
-        if (fittnessScore - _eightMap->getBestScore() == 0)
+        if (fitnessScore - _eightMap->getBestScore() == 0)
         {
             std::stringstream str;
             for (int pos : _vecChromo[i].vecPath)
@@ -120,9 +120,9 @@ void EightNumGA::updateFittnessScore()
             break;
         }
         
-        if (fittnessScore > _longestLength)
+        if (fitnessScore > _longestLength)
         {
-            _longestLength = fittnessScore;
+            _longestLength = fitnessScore;
             _fittestChromo = i;
         }
     }

@@ -1,11 +1,8 @@
 #include "HelloWorldScene.h"
-#include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
 #include "BobMap.h"
 #include "Genetic.h"
 USING_NS_CC;
-
-using namespace cocostudio::timeline;
 
 Scene* HelloWorld::createScene()
 {
